@@ -1,3 +1,49 @@
+html, body {
+  width: 100%;
+}
 #quote-list {
   padding: 20px;
+}
+#edit-modal {
+  margin-top: 20px;
+  position: fixed;
+  width: 60%;
+  top: 30%;
+  left: 20%;
+  opacity: 0;
+  height: 0;
+  transition: 0.25s ease-out;
+  z-index: -10;
+}
+#edit-modal.active {
+  opacity: 1;
+  height: auto;
+  z-index: 10;
+}
+.btn {
+  margin-right: 10px;
+}
+#quote-list {
+  list-style-type: none;
+  padding: 0;
+}
+#quote-list li {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+}
+#quote-list li blockquote {
+  padding: 15px;
+}
+.removed {
+  z-index: -11;
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease-out;
+}
+#sort {
+  float: right;
+  margin-top: 10px;
+  margin-right: 0;
 }
